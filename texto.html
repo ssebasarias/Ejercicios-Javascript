@@ -1,0 +1,58 @@
+<!-- 
+    NOTA: SIEMPRE QUE SE ABRA UNA ETIQUETA ES NECESARIO CERRARLA
+
+    Para comenzar un archivo html es necesario colocar la etiqueta <html>
+        para que el navegador lo reconozca
+    
+-->
+
+<html>
+    <!--  <head> Se usa para definir la parte menos visible de la pagina -->
+    <head>
+        <!--  <title> Definir que es un titulo (este se mostrara en la descripcion o texto de la pestaña) -->
+        <title>Mi primer archivo html</title>
+        <style>
+            /* Dentro de esta etiqueta se implemente todo el css o estilo de la pagina
+                Se coloca el nombre de la etiqueta a cambiar seguido de llaves para especificar a que se le cambiara el estilo */
+            
+            /* Dentro de las llaves se coloca el estilo que se desea */
+            body
+            {
+                /* background-color (cambiar el color del fondo) */
+                background-color: turquoise;
+
+                /* color (cambiar el color del texto) */
+                color: white;
+
+                /* font-family (cambia la fuente o el estilo del texto) */
+                font-family: Helvetica;
+            }
+            strong
+            {
+                background-color: tomato;
+            }
+        </style>
+    </head>
+    <!--  <body> Etiqueta la cual contiene todo el contenido de la pagina (la parte mas visual) -->
+    <body>
+        <!-- <p> crear un nuevo texto  -->
+        <p>Este es mi primer texto</p>
+
+        <!-- <strong> colocar en negrilla el texto -->
+        <p>Este es mi <strong>segundo texto</strong></p>
+
+        <!-- Justo antes de la etiqueta de cerrado <body> se coloca la etiqueta <script> con el codigo javascript,
+            esto se hace para que la parte visual cargue primero para poder interactual bien con la pagina -->
+        <!-- <script> etiqueta usada para colocar dentro el codigo javascript,
+             en el cual se escribe todo la interactividad de la pagina -->
+        <script>
+            /* var (tipo de variable que reconoce que tipo esta usando, es decir, var reconoce que x, y, z con tipo int) */
+            var a = 1;
+            var b = 1;
+            var c = a + b;
+            /* document.write (se usa para escribir una cadena de texto en javascript y poder mostrarla en la pagina) */
+            document.write("El resultado de la suma es: " + c);
+        </script>
+    </body>
+</html>
+
